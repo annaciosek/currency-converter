@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Currency converter</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <section class="intro">
+          <img src="img/logo.png" alt="logo" class="logo">
+          <div class="intro-heading">
+            <h1>Currency converter</h1>
+            <h2>Convert Euros, US Dollars, and Swiss Francs to PLN</h2>
+          </div>
+        </section>
+        <section class="conversion">
+          <form>
+            <label for="currency">Choose currency:</label>
+            <select id="currency">
+              <option value="EUR">EUR</option>
+              <option value="USD">USD</option>
+              <option value="CHF">CHF</option>
+            </select>
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" step="0.01" min="0.01"/>
+            <button type="submit">Convert</button>
+          </form>
+          <div id="result"></div>
+          <div id="loader"></div>
+        </section>
+      </div>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>
