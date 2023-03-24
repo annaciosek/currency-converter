@@ -4,12 +4,12 @@
   --mid: #6a8e95;
   --light: #e0f0d9;
   --white: #ffffff;
-  --transparent: rgba(255, 255, 255, 0);
   --font-xs: 14px;
   --font-s: 16px;
   --font-m: 20px;
   --font-l: 26px;
 }
+
 body {
   background-color: var(--dark);
   color: var(--light);
@@ -17,6 +17,7 @@ body {
   font-size: var(--font-s);
   line-height: 1.2;
 }
+
 .container {
   width: 96%;
   margin: 0 auto;
@@ -30,11 +31,13 @@ h1 {
   text-transform: uppercase;
   color: var(--white);
 }
+
 h2 {
   text-align: center;
   font-size: var(--font-m);
   font-weight: 400;
 }
+
 .intro {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   padding: 20px 0;
@@ -44,15 +47,18 @@ h2 {
   align-items: center;
   justify-content: center;
 }
+
 img.logo {
   width: 60px;
   height: auto;
   margin-bottom: 20px;
 }
+
 .conversion {
   padding: 20px 0;
   text-align: center;
 }
+
 form {
   display: flex;
   flex-direction: column;

@@ -18,12 +18,13 @@ form.addEventListener("submit", (e) => {
       const result = amount * rate;
 
       resultDiv.innerHTML = `${amount} ${currency} = ${result.toFixed(2)} PLN`;
-      loaderDiv.style.display = "none";
     })
     .catch((error) => {
       console.error(error);
       resultDiv.innerHTML =
         "There was an error fetching data. Please refresh and try again.";
+    })
+    .finally(() => {
       loaderDiv.style.display = "none";
     });
 });
